@@ -1,0 +1,106 @@
+<div class="select-action-buttons">
+  <button mat-button (click)="accordion.openAll()">Expand All</button>
+  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+</div>
+
+<h2>
+  Order More
+</h2>
+
+<mat-accordion class="select-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Snack Cabinet
+      </mat-panel-title>
+      <mat-panel-description>
+        Choose from different Snacks
+        <mat-icon> fastfood</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <section class="select-section" [formGroup]="selections">
+      <h4>Select your snacks:</h4>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <div>
+            <p><mat-checkbox formControlName="chips">Chips</mat-checkbox></p>
+            <p><mat-checkbox formControlName="cookies">Cookies</mat-checkbox></p>
+            <p><mat-checkbox formControlName="fruitbars">Fruit Bars</mat-checkbox></p>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div>
+            <p><mat-checkbox formControlName="juices">Juices</mat-checkbox></p>
+            <p><mat-checkbox formControlName="oatmeal">Oatmeal</mat-checkbox></p>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </section>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Bathroom
+      </mat-panel-title>
+      <mat-panel-description>
+        Choose from different Bathroom Accessories
+        <mat-icon> hotel</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <section class="select-section" [formGroup]="selections">
+      <h4>Select your Bathroom Accessories:</h4>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <div>
+            <p><mat-checkbox formControlName="toothbrushes">Tooth Brushes</mat-checkbox></p>
+            <p><mat-checkbox formControlName="toothpastes">Tooth Pastes</mat-checkbox></p>
+            <p><mat-checkbox formControlName="mens_razors">Men's Razors</mat-checkbox></p>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div>
+            <p><mat-checkbox formControlName="womens_razors">Women's Razors</mat-checkbox></p>
+            <p><mat-checkbox formControlName="womens_pads">Women's Pads</mat-checkbox></p>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </section>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Miscellaneous
+      </mat-panel-title>
+      <mat-panel-description>
+        Choose from different Miscellaneous Items
+        <mat-icon> local_drink</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <section class="select-section" [formGroup]="selections">
+      <h4>Select your Miscellaneous Accessories:</h4>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <div>
+            <p><mat-checkbox formControlName="water">Water</mat-checkbox></p>
+            <p><mat-checkbox formControlName="toilet_paper">Toilet Paper</mat-checkbox></p>
+            <p><mat-checkbox formControlName="paper_towels">Paper Towels</mat-checkbox></p>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </section>
+  </mat-expansion-panel>
+
+</mat-accordion>
+
+<div class="select-button-row" style="margin-top: 10px;">
+  <button mat-raised-button color="primary" (click)="openDialog()">Order More</button>
+</div>

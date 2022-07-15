@@ -1,0 +1,25 @@
+.select-action-buttons {
+  padding-bottom: 20px;
+}
+
+.select-headers-align .mat-expansion-panel-header-title,
+.select-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.select-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.select-section {
+  margin: 12px 0;
+}
+
+mat-grid-tile {
+  background: #e5e5e5;
+}

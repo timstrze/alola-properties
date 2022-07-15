@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "firebase": "firebase",
     "start": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "deploy": "npm run buildProd && firebase deploy",
     "buildProd": "ng build --configuration production"
   },
   "private": true,

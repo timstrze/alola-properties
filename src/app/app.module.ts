@@ -8,10 +8,25 @@ import {MatCardModule} from '@angular/material/card';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
+import { MoreComponent } from './order/more/more.component';
+import { HomeComponent } from './home/home.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { OrderMoreConfirmComponent } from './dialogs/order-more-confirm/order-more-confirm.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoreComponent,
+    HomeComponent,
+    OrderMoreConfirmComponent
   ],
   imports: [
     BrowserModule,
@@ -20,9 +35,21 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     FlexLayoutModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatExpansionModule,
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
