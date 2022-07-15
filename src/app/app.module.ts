@@ -20,6 +20,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { OrderMoreConfirmComponent } from './dialogs/order-more-confirm/order-more-confirm.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatCheckboxModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [
     MatDatepickerModule
